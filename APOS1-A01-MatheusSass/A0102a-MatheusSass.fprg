@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dev"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-28 07:57:57 "/>
+        <attribute name="created" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwNzo0OToyNCAiOzI1NDg="/>
+        <attribute name="edited" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwNzo1Nzo1NyAiOzE7MjY2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="salario" type="Real" array="False" size=""/>
+            <declare name="diario" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira seu sal&#225;rio mensal: &quot;" newline="True"/>
+            <input variable="salario"/>
+            <assign variable="diario" expression="salario / 30"/>
+            <output expression="&quot;Voc&#234; recebe &quot; &amp;diario&amp; &quot; reais por dia!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

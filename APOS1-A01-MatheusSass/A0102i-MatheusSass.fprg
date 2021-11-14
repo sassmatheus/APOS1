@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dev"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-28 08:28:42 "/>
+        <attribute name="created" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwODoyMToyMSAiOzI1MzY="/>
+        <attribute name="edited" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwODoyODo0MiAiOzE7MjY1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <declare name="num1" type="Real" array="False" size=""/>
+            <declare name="num2" type="Real" array="False" size=""/>
+            <declare name="num3" type="Real" array="False" size=""/>
+            <declare name="num4" type="Real" array="False" size=""/>
+            <declare name="num5" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira 5 valores para verificar se a m&#233;dia &#233; maior ou menor que 100.&quot;" newline="True"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <input variable="num4"/>
+            <input variable="num5"/>
+            <assign variable="media" expression="(num1+num2+num3+num4+num5)/5"/>
+            <if expression="media &gt; 100">
+                <then>
+                    <output expression="&quot;Maior.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Menor.&quot;" newline="True"/>
+                </else>
+            </if>
+            <output expression="&quot;A m&#233;dia &#233;: &quot;&amp;media&amp;&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

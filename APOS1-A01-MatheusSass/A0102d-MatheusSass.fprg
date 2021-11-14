@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dev"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-28 08:08:14 "/>
+        <attribute name="created" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwNzo1ODoyMiAiOzI1NDY="/>
+        <attribute name="edited" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwODowODoxNCAiOzE7MjY1MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="media" type="Real" array="False" size=""/>
+            <declare name="num1" type="Real" array="False" size=""/>
+            <declare name="num2" type="Real" array="False" size=""/>
+            <declare name="num3" type="Real" array="False" size=""/>
+            <declare name="num4" type="Real" array="False" size=""/>
+            <output expression="&quot;Insira 4 n&#250;meros para calcular a m&#233;dia: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <input variable="num3"/>
+            <input variable="num4"/>
+            <assign variable="media" expression="(num1+num2+num3+num4) / 4"/>
+            <output expression="&quot;A m&#233;dia &#233;: &quot;&amp;media&amp;&quot;&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

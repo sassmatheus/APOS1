@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dev"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-28 08:59:59 "/>
+        <attribute name="created" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwODozMTowNiAiOzI1NDA="/>
+        <attribute name="edited" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwODo1OTo1OSAiOzM7MjY2OA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="aluno" type="Integer" array="False" size=""/>
+            <declare name="notaB1" type="Real" array="False" size=""/>
+            <declare name="notaB2" type="Real" array="False" size=""/>
+            <declare name="notaB3" type="Real" array="False" size=""/>
+            <declare name="notaB4" type="Real" array="False" size=""/>
+            <declare name="media" type="Real" array="False" size=""/>
+            <declare name="soma" type="Real" array="False" size=""/>
+            <for variable="aluno" start="1" end="5" direction="inc" step="1">
+                <output expression="&quot;Insira as 4 notas do aluno &quot;&amp;aluno&amp;&quot;:&quot;" newline="True"/>
+                <input variable="notaB1"/>
+                <assign variable="soma" expression="notaB1"/>
+                <input variable="notaB2"/>
+                <assign variable="soma" expression="soma + notaB2"/>
+                <input variable="notaB3"/>
+                <assign variable="soma" expression="soma + notaB3"/>
+                <input variable="notaB4"/>
+                <assign variable="soma" expression="soma + notaB4"/>
+                <assign variable="media" expression="soma / 4"/>
+                <output expression="&quot;M&#233;dia: &quot;&amp;media&amp;&quot;&quot;" newline="True"/>
+                <if expression="media &gt;= 7">
+                    <then>
+                        <output expression="&quot;Aluno &quot;&amp;aluno&amp;&quot;: APROVADO!&quot;" newline="True"/>
+                    </then>
+                    <else>
+                        <output expression="&quot;Aluno &quot;&amp;aluno&amp;&quot;: Reprovado.&quot;" newline="True"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

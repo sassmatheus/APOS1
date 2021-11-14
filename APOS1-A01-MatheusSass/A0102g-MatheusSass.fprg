@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="dev"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-05-28 08:21:12 "/>
+        <attribute name="created" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwODowODoyNCAiOzI1NDQ="/>
+        <attribute name="edited" value="ZGV2O0RFU0tUT1AtUDlHNTdNNDsyMDIxLTA1LTI4OyIwODoyMToxMiAiOzE7MjY0NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="idadeDias" type="Integer" array="False" size=""/>
+            <declare name="anos" type="Integer" array="False" size=""/>
+            <declare name="meses" type="Integer" array="False" size=""/>
+            <declare name="dias" type="Integer" array="False" size=""/>
+            <output expression="&quot;Insira sua idade atual incluindo: anos, meses e dias.&quot;" newline="True"/>
+            <output expression="&quot;Anos: &quot;" newline="True"/>
+            <input variable="anos"/>
+            <output expression="&quot;Meses: &quot;" newline="True"/>
+            <input variable="meses"/>
+            <output expression="&quot;Dias: &quot;" newline="True"/>
+            <input variable="dias"/>
+            <assign variable="idadeDias" expression="(anos*365)+(meses*30)+dias"/>
+            <output expression="&quot;Voc&#234; tem &quot;&amp;idadeDias&amp;&quot; dias de idade!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
